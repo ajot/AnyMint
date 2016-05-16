@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    any_bar (0.1.0)
+    net-ping (1.7.8)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  any_bar
+  net-ping
+
+BUNDLED WITH
+   1.11.2
