@@ -16,15 +16,15 @@ brew cask install anybar
 
 ### Setup AnyMint
 ```
-git clone git@github.com:ajot/menubar-wifi-status.git
-cd menubar-wifi-status
+git clone git@github.com:ajot/AnyMint.git
+cd AnyMint
 bundle install
 ```
 
 Open start_any_bar.sh, and update the path to point to the main.rb file.
 
 ## Launch
-    bash start_any_bar.sh
+    bash start-any-mint.sh
 
 ---
 
