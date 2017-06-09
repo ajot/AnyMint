@@ -1,4 +1,6 @@
 #!/usr/bin/env ruby
 
 `open ~/Applications/AnyBar.app`
-`ruby main.rb`
+
+# TODO: Update the path to point to menubar-wifi-status/main.rb
+`ruby PATH_TO/menubar-wifi-status/main.rb`
