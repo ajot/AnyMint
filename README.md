@@ -8,9 +8,7 @@ The WiFi indicator on the menubar can be misleading. Even though it says you're 
 ![](https://github.com/ajot/menubar-wifi-status/blob/master/assets/demo.gif)
 
 ### Install AnyBar
- AnyBar is a small indicator for your menubar that does one simple thing: it displays a colored dot. What the dot means and when to change it is up to you.
-
-https://github.com/tonsky/AnyBar
+ [AnyBar](https://github.com/tonsky/AnyBar) is a small indicator for your menubar that does one simple thing: it displays a colored dot. What the dot means and when to change it is up to you.
 
 ```
 brew cask install anybar
