@@ -29,8 +29,7 @@ cd AnyMint
 bundle install
 ```
 
-4. Update the path
-Open start-any-mint.sh, and update the path to point to the main.rb file.
+4. Open start-any-mint.sh, and update the path to point to the main.rb file.
 
 ## Launch
     bash start-any-mint.sh
