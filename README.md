@@ -7,24 +7,35 @@ The WiFi indicator on the menubar can be misleading. Even though it says you're 
 
 ![](https://github.com/ajot/menubar-wifi-status/blob/master/assets/demo.gif)
 
-### Install AnyBar
- [AnyBar](https://github.com/tonsky/AnyBar) is a small indicator for your menubar that does one simple thing: it displays a colored dot. What the dot means and when to change it is up to you.
+AnyMint is built on top of [AnyBar](https://github.com/tonsky/AnyBar) - a tiny Mac app that does one simple thing: it displays a colored dot on the menubar. What the dot means and when to change it is up to you.
 
+AnyMint simply changes the color of the dot (green or red) by checking if you're truly connected to the internet.
+
+## Setup AnyMint
+
+1. Install AnyBar
 ```
 brew cask install anybar
 ```
 
-### Setup AnyMint
+2. Clone this repo
 ```
 git clone git@github.com:ajot/AnyMint.git
+```
+
+3. Install dependencies
+```
 cd AnyMint
 bundle install
 ```
 
+4. Update the path
 Open start-any-mint.sh, and update the path to point to the main.rb file.
 
 ## Launch
     bash start-any-mint.sh
+
+Enjoy!
 
 ---
 
