@@ -26,3 +26,7 @@ https://github.com/tonsky/AnyBar
 
 ## Launch
     bash start_any_bar.sh
+
+---
+
+**TODO**: Launch at startup - https://stackoverflow.com/questions/6442364/running-script-upon-login-mac
