@@ -1,14 +1,17 @@
-#Mac OS X menubar WiFi status indicator
+AnyBar WiFi Status
+
+# AnyBar WiFi Status
 Indicates the status of the WiFi in the OS X menu bar, with a green or a red light.
 
-## Install AnyBar
+## Setting up
+### Install AnyBar
  AnyBar is a small indicator for your menubar that does one simple thing: it displays a colored dot. What the dot means and when to change it is up to you.
 
 ```
 brew cask install anybar
 ```
 
-## Setting up Menubar WiFi Status
+### Install AnyBar WiFi Status
 
 ```
 git clone git@github.com:ajot/menubar-wifi-status.git
