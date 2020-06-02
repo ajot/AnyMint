@@ -1,6 +1,6 @@
 
 
-# AnyMint
+# AnyMint - OS X Menubar WiFi Status Indicator
 The WiFi indicator on the menubar can be misleading. Even though it says you're connected to WiFi, doesn't always mean you're connected to the internet. This is especially true when on train/flight/hotel WiFi.
 
 **AnyMint** indicates the Internet connectivity status in the OS X menu bar, with a green or a red dot on the menu bar.
