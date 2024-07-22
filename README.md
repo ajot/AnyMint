@@ -15,12 +15,12 @@ AnyMint simply changes the color of the dot (green or red) by checking if you're
 
 1. Install AnyBar
 ```
-brew cask install anybar
+brew install --cask anybar
 ```
 
 2. Clone this repo
 ```
-git clone git@github.com:ajot/AnyMint.git
+git clone https://github.com/ajot/AnyMint.git
 ```
 
 3. Install dependencies
