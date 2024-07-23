@@ -1,7 +1,7 @@
 # AnyMint - Internet Status Checker for Mac
 The WiFi indicator on the menubar can be misleading. Even though it says you're connected to WiFi, it doesn't always mean you're connected to the internet. This is especially true when on train/flight/hotel WiFi.
 
-**AnyMint** continuously monitors your internet connection by pinging Google and visually displays the status using the AnyBar application. It changes the AnyBar icon to green when the connection is successful, showing the ping time, and to red when there's a timeout.
+**AnyMint** continuously monitors your internet connection by sending a request to Google and visually displays the status using the AnyBar application. It changes the AnyBar icon to green when the connection is successful, showing the response time, and to red when there's a timeout.
 
 ![Demo](https://github.com/ajot/menubar-wifi-status/blob/master/assets/demo.gif)
 
@@ -24,7 +24,7 @@ AnyMint is built on top of [AnyBar](https://github.com/tonsky/AnyBar) - a tiny M
 - Python 3
 - AnyBar application
 - `pyanybar` Python library
-- `ping3` Python library
+- `requests` Python library
 
 ## Installation
 
@@ -40,7 +40,7 @@ AnyMint is built on top of [AnyBar](https://github.com/tonsky/AnyBar) - a tiny M
 
 3. Install the required Python libraries:
    ```
-   pip install pyanybar ping3
+   pip install pyanybar requests
    ```
 
 4. Install the AnyBar application (if not already installed):
@@ -75,7 +75,7 @@ To have the script run automatically at login:
 
 ## Configuration
 
-- The script is set to ping Google (`google.com`) by default. You can change this in the `check_ping` function.
+- The script is set to send a request to Google (`http://www.google.com`) by default. You can change this in the `check_internet_connection` function.
 - The AnyBar port is set to 1738. Modify the `port` variable if needed.
 - The script checks the connection every 5 seconds. Adjust the `sleep(5)` line to change this interval.
 
@@ -90,4 +90,4 @@ To have the script run automatically at login:
 
 - AnyBar project: https://github.com/tonsky/AnyBar
 - pyanybar library
-- ping3 library
+- requests library

@@ -1,24 +1,21 @@
 #!/usr/bin/env python3
 import time
+import requests
 from anybar import AnyBar
-from ping3 import ping
 
 AnyBar(port=1738).change('black')
 
-def check_ping(host='google.com'):
+def check_internet_connection(url='http://www.google.com/', timeout=5):
     try:
-        result = ping(host, timeout=2)
-        if result is not None:
-            return True, result * 1000  # Convert to milliseconds
-        else:
-            return False, None
-    except Exception:
+        response = requests.get(url, timeout=timeout)
+        return True, response.elapsed.total_seconds() * 1000  # Convert to milliseconds
+    except (requests.ConnectionError, requests.Timeout):
         return False, None
 
 print("Launching the AnyBar script")
 
 while True:
-    success, duration = check_ping()
+    success, duration = check_internet_connection()
     if success:
         print(f"CONNECTED: Host replied in {duration:.2f} ms")
         AnyBar().change('green')
